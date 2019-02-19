@@ -1,0 +1,19 @@
+ControlMaster auto
+ControlPath /tmp/%r@%h:%p
+#ControlPersist yes
+ForwardX11 no
+
+Host fe80::240:8cff:fe?7:b9*
+  StrictHostKeyChecking	no
+  UserKnownHostsFile /dev/null
+
+Host 192.168.77.*
+  StrictHostKeyChecking	no
+  UserKnownHostsFile /dev/null
+
+Host 192.168.0.*
+  StrictHostKeyChecking	no
+  UserKnownHostsFile /dev/null
+
+Host eater-*.se.axis.com
+  ForwardAgent yes
